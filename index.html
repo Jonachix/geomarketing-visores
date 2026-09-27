@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visores de geomarketing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root { --bg:#f9f9f7; --card:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --line:#e1e0d9; --accent:#c1121f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#0d0d0d; --card:#1a1a19; --ink:#ffffff; --ink2:#c3c2b7; --line:#2c2c2a; --accent:#ff6b6b; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:880px; margin:0 auto; padding:48px 16px 40px; }
+  h1 { font-size:28px; margin:0 0 8px; }
+  p.lead { color:var(--ink2); margin:0 0 28px; line-height:1.5; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; }
+  a.card { display:block; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px; color:inherit; text-decoration:none; transition:border-color .15s, transform .15s; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .card h2 { font-size:20px; margin:10px 0 4px; }
+  .card .sub { color:var(--ink2); font-size:14px; }
+  .card i.big { font-size:26px; color:var(--accent); }
+  .card ul { margin:12px 0 0; padding-left:18px; color:var(--ink2); font-size:14px; line-height:1.6; }
+  .go { margin-top:14px; font-weight:600; color:var(--accent); font-size:14px; }
+  footer { margin-top:32px; color:var(--ink2); font-size:13px; line-height:1.5; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Visores de geomarketing</h1>
+  <p class="lead">Mapas interactivos con población (INEI 2017 y Censo 2025), nivel socioeconómico por manzana, comercio clave,
+     servicios y el área alcanzable en 2 horas desde la Plaza de Armas de cada ciudad.</p>
+  <div class="grid">
+    <a class="card" href="huaraz/">
+      <i class="fa-solid fa-mountain big"></i>
+      <h2>Huaraz</h2>
+      <div class="sub">Provincia de Huaraz · Áncash</div>
+      <ul><li>Distritos de estudio: Huaraz e Independencia</li><li>≈ 262 mil habitantes a 2 h (Censo 2025)</li></ul>
+      <div class="go">Abrir visor <i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+    <a class="card" href="madre-de-dios/">
+      <i class="fa-solid fa-tree big"></i>
+      <h2>Puerto Maldonado</h2>
+      <div class="sub">Provincia de Tambopata · Madre de Dios</div>
+      <ul><li>Distritos de estudio: Tambopata y Las Piedras</li><li>≈ 117 mil habitantes a 2 h (Censo 2025)</li></ul>
+      <div class="go">Abrir visor <i class="fa-solid fa-arrow-right"></i></div>
+    </a>
+  </div>
+  <footer>Cada visor es un solo archivo HTML con los datos incluidos: también se puede descargar y abrir sin conexión
+    (el mapa base y los íconos necesitan internet).<br>
+    Fuentes: INEI (vía GEOPERU), MINSA, MINEDU, MTC, OSINERGMIN, COFOPRI, INGEMMET y © colaboradores de OpenStreetMap.</footer>
+</main>
+</body>
+</html>
