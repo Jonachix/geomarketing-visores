@@ -17,3 +17,6 @@ Cada visor es un único archivo `index.html` con los datos incluidos. Descárgal
 
 ## Fuentes
 INEI (Censos 2017 y 2025, estratificación socioeconómica; vía GEOPERU), MINSA (RENIPRESS), MINEDU, MTC, OSINERGMIN, COFOPRI, INGEMMET y © colaboradores de OpenStreetMap (ODbL).
+
+---
+Autor: [Jonachix](https://github.com/Jonachix)
